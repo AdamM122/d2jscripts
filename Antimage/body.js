@@ -1,3 +1,8 @@
+//AntimageAutoUlt
+//Автор vk.com/adamm122
+
+
+
 var interval = 0.1
 var damage = [0.6,0.85,1.1]
 var scepterdamage = [0.6,0.85,1.1]
