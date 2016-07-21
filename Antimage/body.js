@@ -40,12 +40,12 @@ if ( !AmUlti.checked )
 		if (Game.PointDistance(entPos,MyPos) >  rangeCast) {
 			cast = false
 		}
-		var enemyhp = Entities.GetMana(ent)
-		var enemymaxhp = Entities.GetMaxMana(ent)
+		var enemymana = Entities.GetMana(ent)
+		var enemymaxmana = Entities.GetMaxMana(ent)
 		var MagicResist = Entities.GetArmorReductionForDamageType( ent, 2 )*100
 
-		var calcdamge = (enemymaxhp - enemyhp)*UltiDmg
-		$.Msg(enemyhp, enemymaxhp, UltiDmg)
+		var calcdamge = (enemymaxmana - enemymana)*UltiDmg
+		$.Msg(enemymana, enemymaxmana, UltiDmg)
 
 		var clearDamage = calcdamge - calcdamge/100*MagicResist
 		
