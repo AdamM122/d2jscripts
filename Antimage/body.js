@@ -1,4 +1,4 @@
-﻿
+﻿//AM auto ult
 
 var interval = 0.1
 var damage = [0.6,0.85,1.1]
@@ -119,8 +119,6 @@ if ( !Antimage.checked )
 		            if (Buffs.GetName(ent, buffs[m]) === BuffsAbsorbMagicDmg[k][0])
 		                if (Array.isArray(BuffsAbsorbMagicDmg[k][1]))
 		                    dmgclear -= BuffsAbsorbMagicDmg[k][1][Abilities.GetLevel(buffs.GetAbility(ent, buffs[i])) - 1]
-		                else
-		                    dmgclear -= BuffsAddMagicDmgForMe[k][1]
 
 		    if (Lense)
 		        dmgclear = dmgclear * 1.05
